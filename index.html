@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Game Shop</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <style>
+    .carousel-item img {
+      height: 400px;
+      object-fit: cover;
+    }
+    .card img {
+      height: 300px;
+      width: 100%;
+      
+    }
+    .container {
+      padding: 24px;
+      
+      
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Carousel -->
+  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div data-bs-interval="3000" class="carousel-item active">
+        <img src="./Imagens jogos/alex-shuper-W6nUD_Pk2Gw-unsplash.jpg" class="d-block w-100" alt="Slide 1">
+      </div>
+      <div data-bs-interval="3000" class="carousel-item">
+        <img src="./Imagens jogos/d-koi-NzVKN_xZWvs-unsplash.jpg" class="d-block w-100" alt="Slide 2">
+      </div>
+      <div data-bs-interval="3000" class="carousel-item">
+        <img src="./Imagens jogos/jon-handley-BZ-vv1mB41Q-unsplash.jpg" class="d-block w-100" alt="Slide 3">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Grid Layout -->
+  <div class="container">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="./Imagens jogos/jon-handley-BZ-vv1mB41Q-unsplash.jpg" class="card-img-top" alt="Game 1">
+          <div class="card-body">
+            <h5 class="card-title">GAME "HomeBuilder: Construa sua Casa dos Sonhos"</h5>
+            <p class="card-text">Descrição:
+              HomeBuilder é um jogo de construção de casas no estilo The Sims, onde os jogadores têm a oportunidade de projetar e construir suas próprias casas dos sonhos. Seja um arquiteto virtual e dê asas à sua imaginação!</p>
+            <a href="#" class="btn btn-primary">COMPRE AGORA</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="./Imagens jogos/trent-pickering-ARC2Ip4tsg4-unsplash.jpg" class="card-img-top" alt="Game 1">
+          <div class="card-body">
+            <h5 class="card-title">Game  "Hello: O Mistério Assombrado" </h5>
+            <p class="card-text">Descrição:
+              Hello é um jogo de terror psicológico que mergulha os jogadores em uma experiência aterrorizante e cheia de suspense. Prepare-se para entrar em um mundo sombrio e desvendar o mistério assombrado que assola uma antiga mansão abandonada.</p>
+            <a href="#" class="btn btn-primary">COMPRE AGORA</a>
+          </div>
+        </div>
+      </div><div class="col">
+        <div class="card">
+          <img src="./Imagens jogos/vinay-tryambake-PPL37QnXzNI-unsplash.jpg" class="card-img-top" alt="Game 1">
+          <div class="card-body">
+            <h5 class="card-title">GAME "Green Skull: O Pesadelo Assombrado"</h5>
+            <p class="card-text">Descrição:
+              Green Skull é um jogo de terror intenso que leva os jogadores a um mundo sombrio e assustador, onde uma caveira verde sinistra é o símbolo do pesadelo que os aguarda. Prepare-se para uma experiência aterrorizante, cheia de suspense e horrores inimagináveis.</p>
+            <a href="#" class="btn btn-primary">COMPRE AGORA</a>
+          </div>
+        </div>
+      </div><div class="col">
+        <div class="card">
+          <img src="./Imagens jogos/alex-shuper-W6nUD_Pk2Gw-unsplash.jpg" class="card-img-top" alt="Game 1">
+          <div class="card-body">
+            <h5 class="card-title">Game "Umbrella Mars: Aventura Astronáutica"</h5>
+            <p class="card-text">Descrição:
+              Umbrella Mars é um emocionante jogo de aventura espacial que transporta os jogadores para o planeta vermelho, Marte. Nesta jornada interplanetária, você assume o papel de um intrépido astronauta equipado com um guarda-chuva especial, explorando paisagens alienígenas e desafiando os perigos do espaço sideral.</p>
+            <a href="#" class="btn btn-primary">COMPRE AGORA</a>
+          </div>
+        </div>
+      
+      <!-- Adicione mais colunas de jogos aqui -->
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+</body>
+</html>
