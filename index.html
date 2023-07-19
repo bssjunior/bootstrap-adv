@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bootstrap Game Shop</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="main.css">
   <style>
     .carousel-item img {
       height: 400px;
@@ -23,80 +29,290 @@
   </style>
 </head>
 <body>
+  <header class="navbar navbar-expand-lg sticky-top p-2" id="#cabecalho">
+    <div class="container">
+      <h1 class="navbar-brand m-0"> GAMER COIN </h1>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+        <ul class="nav nav-pills b-block d-md-flex">
+          <li class="nav-item fw-bold">
+            <a href="#sobre-nossa-loja" class="nav-link">
+              <i class="bi bi-shop me-1"></i>
+              Nossa loja</a>
+          </li>
+          <li class="nav-item fw-bold">
+            <a href="#eventos" class="nav-link">
+              <i class="bi bi-joystick me-1"></i>
+              Eventos</a>
+          </li>
+          <li class="nav-item fw-bold">
+            <a href="#catalogo-de-jogos" class="nav-link">
+              <i class="bi bi-controller me-1"></i>
+              Catalogo de jogos</a>
+          </li>
+          <li class="nav-item fw-bold">
+            <a href="#fale-conosco" class="nav-link">
+              <i class="bi bi-headset me-1"></i>
+              Entre em contato</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
   <!-- Carousel -->
-  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div data-bs-interval="3000" class="carousel-item active">
-        <img src="./Imagens jogos/alex-shuper-W6nUD_Pk2Gw-unsplash.jpg" class="d-block w-100" alt="Slide 1">
+  <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+    <section id="sobre-nossa-loja">
+      <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div data-bs-interval="3000" class="carousel-item active">
+            <img src="./Imagens jogos/alex-shuper-W6nUD_Pk2Gw-unsplash.jpg" class="d-block w-100" alt="Slide 1">
+          </div>
+          <div data-bs-interval="3000" class="carousel-item">
+            <img src="./Imagens jogos/d-koi-NzVKN_xZWvs-unsplash.jpg" class="d-block w-100" alt="Slide 2">
+          </div>
+          <div data-bs-interval="3000" class="carousel-item">
+            <img src="./Imagens jogos/jon-handley-BZ-vv1mB41Q-unsplash.jpg" class="d-block w-100" alt="Slide 3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0" ></button>
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" ></button>
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" ></button>
+        </div>
       </div>
-      <div data-bs-interval="3000" class="carousel-item">
-        <img src="./Imagens jogos/d-koi-NzVKN_xZWvs-unsplash.jpg" class="d-block w-100" alt="Slide 2">
+      <div class="pt-5 pb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5">
+              <img src="Imagens jogos/youtuber-g8fe9861eb_640.jpg" class="d-block w-100 rounded" alt="foto sobre nos">
+            </div>
+            <div class="col-md-7 mt-3 mt-md-0">
+              <h2>NOSSA LOJA</h2>
+              <p class="paragrafo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, ut autem nesciunt ex tenetur animi modi soluta distinctio mollitia obcaecati expedita vero eligendi quod similique nulla tempora excepturi veniam nisi.</p>
+              <h3>ESPAÇO VIRTUAL</h3>
+              <p class="paragrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus amet a pariatur quas! Ex magni hic cum nihil quisquam cumque architecto repellat facilis expedita reprehenderit sapiente, nisi in numquam soluta.</p>
+              <ul>
+                <li class="paragrafo">ITEM 01</li>
+                <li class="paragrafo">ITEM 02</li>
+                <li class="paragrafo">ITEM 03</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
-      <div data-bs-interval="3000" class="carousel-item">
-        <img src="./Imagens jogos/jon-handley-BZ-vv1mB41Q-unsplash.jpg" class="d-block w-100" alt="Slide 3">
+    </section>
+    <section id="eventos" class="pt-5 pb-5">
+      <div class="container">
+        <div class="row">
+          <h2 class="section-title text-center">JOGOS ONLINE EM NOSSA PLATAFORMA</h2>
+        </div>
+        <div class="row mt-4">
+          <div class="col-md-4">
+            <img src="Imagens jogos/carl-raw-m3hn2Kn5Bns-unsplash.jpg" alt="jogos online" class="d-block w-100 rounded mb-2">
+          <h3 class="section-title text-colored">Campeonatos NACIONAIS</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis nam soluta tempore natus odio ad omnis obcaecati harum non ex debitis, aspernatur tempora modi reiciendis voluptatibus sed, similique molestiae quam?
+          </p>
+          </div>
+          
+          <div class="col-md-4">
+            <img src="Imagens jogos/andrey-metelev-DEuansgqjns-unsplash.jpg" alt="jogos online" class="d-block w-100 rounded mb-2">
+          <h3 class="section-title text-colored">Campeonatos SUL-AMERICANOS</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis nam soluta tempore natus odio ad omnis obcaecati harum non ex debitis, aspernatur tempora modi reiciendis voluptatibus sed, similique molestiae quam?
+          </p>
+          
+        </div>
+        <div class="col-md-4">
+          <img src="Imagens jogos/florian-olivo-Mf23RF8xArY-unsplash.jpg" alt="jogos online" class="d-block w-100 rounded mb-2">
+        <h3 class="section-title text-colored">Campeonatos INTERNACIONAIS</h3>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis nam soluta tempore natus odio ad omnis obcaecati harum non ex debitis, aspernatur tempora modi reiciendis voluptatibus sed, similique molestiae quam?
+        </p>
+        
       </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
+      </div>
+    </section>
+    <section id="catalogo-de-jogos">
+      <div class="container">
+        <div class="row">
+          <h2 class="section-title text-center mb-5">
+           NOSSOS JOGOS</h2>
+        </div>
+        <div class="row">
+          <aside class="col-md-2">
+            <nav class="nav nav-pills flex-column nav-catalogo">
+              <button type="button" data-bs-toggle="tab" data-bs-target="#jogos-de-aventura" class="fw-bold text-start nav-link active">Jogos de Aventura</button>
+              <button type="button" data-bs-toggle="tab" data-bs-target="#jogos-de-acao" class="fw-bold text-start nav-link">Jogos de Ação</button>
+              <button type="button" data-bs-toggle="tab" data-bs-target="#jogos-de-terror" class="fw-bold text-start nav-link">Jogos de Terror</button>
+              <button type="button" data-bs-toggle="tab" data-bs-target="#jogos-de-rpg" class="fw-bold text-start nav-link">Jogos de RPG</button>
+            </nav>
+          </aside>
+          <div class="col-md-10">
+            <div class="tab-content">
+              <div class="tab-pane active" id="jogos-de-aventura">
+                <div class="row">
+                  <div class="col-md-5">
+                    <div class="col">
+                      <div class="card">
+                        <img src="./Imagens jogos/jon-handley-BZ-vv1mB41Q-unsplash.jpg" class="card-img-top" alt="Game 1">
+                        <div class="card-body">
+                          <h5 class="card-title">GAME "HomeBuilder: Construa sua Casa dos Sonhos"</h5>
+                          <p class="card-text">Descrição:
+                            HomeBuilder é um jogo de construção de casas no estilo The Sims, onde os jogadores têm a oportunidade de projetar e construir suas próprias casas dos sonhos. Seja um arquiteto virtual e dê asas à sua imaginação!</p>
+                          <a href="#" class="btn btn-primary">COMPRE AGORA</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-5">
+                    <div class="col">
+                      <div class="card">
+                        <img src="./Imagens jogos/jon-handley-BZ-vv1mB41Q-unsplash.jpg" class="card-img-top" alt="Game 1">
+                        <div class="card-body">
+                          <h5 class="card-title">GAME "HomeBuilder: Construa sua Casa dos Sonhos"</h5>
+                          <p class="card-text">Descrição:
+                            HomeBuilder é um jogo de construção de casas no estilo The Sims, onde os jogadores têm a oportunidade de projetar e construir suas próprias casas dos sonhos. Seja um arquiteto virtual e dê asas à sua imaginação!</p>
+                          <a href="#" class="btn btn-primary">COMPRE AGORA</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="jogos-de-acao">
+                <div class="row">
+                  <div class="col-md-5">
+                    <div class="col">
+                      <div class="card">
+                        <img src="./Imagens jogos/trent-pickering-ARC2Ip4tsg4-unsplash.jpg" class="card-img-top" alt="Game 1">
+                        <div class="card-body">
+                          <h5 class="card-title">Game  "Hello: O Mistério Assombrado" </h5>
+                          <p class="card-text">Descrição:
+                            Hello é um jogo de terror psicológico que mergulha os jogadores em uma experiência aterrorizante e cheia de suspense. Prepare-se para entrar em um mundo sombrio e desvendar o mistério assombrado que assola uma antiga mansão abandonada.</p>
+                          <a href="#" class="btn btn-primary">COMPRE AGORA</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="jogos-de-terror">
+                <div class="row">
+                  <div class="col-md-5">
+                    <div class="col">
+                      <div class="card">
+                        <img src="./Imagens jogos/vinay-tryambake-PPL37QnXzNI-unsplash.jpg" class="card-img-top" alt="Game 1">
+                        <div class="card-body">
+                          <h5 class="card-title">GAME "Green Skull: O Pesadelo Assombrado"</h5>
+                          <p class="card-text">Descrição:
+                            Green Skull é um jogo de terror intenso que leva os jogadores a um mundo sombrio e assustador, onde uma caveira verde sinistra é o símbolo do pesadelo que os aguarda. Prepare-se para uma experiência aterrorizante, cheia de suspense e horrores inimagináveis.</p>
+                          <a href="#" class="btn btn-primary">COMPRE AGORA</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="jogos-de-rpg">
+                <div class="row">
+                  <div class="col-md-5">
+                    <div class="col">
+                      <div class="card">
+                        <img src="./Imagens jogos/alex-shuper-W6nUD_Pk2Gw-unsplash.jpg" class="card-img-top" alt="Game 1">
+                        <div class="card-body">
+                          <h5 class="card-title">Game "Umbrella Mars: Aventura Astronáutica"</h5>
+                          <p class="card-text">Descrição:
+                            Umbrella Mars é um emocionante jogo de aventura espacial que transporta os jogadores para o planeta vermelho, Marte. Nesta jornada interplanetária, você assume o papel de um intrépido astronauta equipado com um guarda-chuva especial, explorando paisagens alienígenas e desafiando os perigos do espaço sideral.</p>
+                          <a href="#" class="btn btn-primary">COMPRE AGORA</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="fale-conosco" class="pt-5 pb-5">
+      <div class="container">
+        <div class="row">
+          <h2 class="section-title text text-center">Fale conosco</h2>
+        </div>
+        <div class="row">
+          <div class="col-md-7 mb-5">
+            <form>
+              <div class="mb-3">
+                <label for="nome" class="form-label fw-bold">Seu nome</label>
+                <input type="text" id="nome" class="form-control" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label fw-bold">Seu email</e-mail></label>
+                <input type="email" id="email" class="form-control" required>
+              </div>
+              <div class="mb-3">
+                <label for="telefone" class="form-label fw-bold">Seu telefone (opcional)</label>
+                <input type="tel" id="telefone" class="form-control">
+              </div>
+              <div class="mb-3">
+                <label for="mensagem" class="form-label fw-bold">Sua Mensagem</label>
+                <textarea class="form-control" id="mensagem" required></textarea>
+              </div>
+              <button type="submit" class="btn">Enviar</button>
+            </form>
+          </div>
+          <div class="col-md-5">
+            <div class="row">
+              <h3 class="section-title fs-4 text-colored">
+                <i class="bi bi-hand-thumbs-up-fill"></i>Redes Sociais</h3>
+              <ul class="social-links">
+                <li class="fs-5">
+                  <a href="#">
+                    <i class="bi bi-facebook text-colored"></i>
+                  </a>
+                </li>
+                <li class="fs-5 ms-1 me-1">
+                  <a href="#">
+                    <i class="bi bi-instagram text-colored"></i>
+                  </a>
+                  <li class="fs-5">
+                    <a href="#">
+                      <i class="bi bi-whatsapp text-colored"></i>
+                    </a>
+                  </li>
+                </li>
+              </ul>
+            </div>
+            <div class="row mt-4">
+              <h3 class="section-title fs-4 text-colored"> 
+                <i class="bi bi-cursor-fill"></i>Endereço</h3>
+              <p> RUA TESTE EXEMPLO - 2245 BAIRRO EBAC - BOOTSTRAP - BT</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
+  
 
-  <!-- Grid Layout -->
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-      <div class="col">
-        <div class="card">
-          <img src="./Imagens jogos/jon-handley-BZ-vv1mB41Q-unsplash.jpg" class="card-img-top" alt="Game 1">
-          <div class="card-body">
-            <h5 class="card-title">GAME "HomeBuilder: Construa sua Casa dos Sonhos"</h5>
-            <p class="card-text">Descrição:
-              HomeBuilder é um jogo de construção de casas no estilo The Sims, onde os jogadores têm a oportunidade de projetar e construir suas próprias casas dos sonhos. Seja um arquiteto virtual e dê asas à sua imaginação!</p>
-            <a href="#" class="btn btn-primary">COMPRE AGORA</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img src="./Imagens jogos/trent-pickering-ARC2Ip4tsg4-unsplash.jpg" class="card-img-top" alt="Game 1">
-          <div class="card-body">
-            <h5 class="card-title">Game  "Hello: O Mistério Assombrado" </h5>
-            <p class="card-text">Descrição:
-              Hello é um jogo de terror psicológico que mergulha os jogadores em uma experiência aterrorizante e cheia de suspense. Prepare-se para entrar em um mundo sombrio e desvendar o mistério assombrado que assola uma antiga mansão abandonada.</p>
-            <a href="#" class="btn btn-primary">COMPRE AGORA</a>
-          </div>
-        </div>
-      </div><div class="col">
-        <div class="card">
-          <img src="./Imagens jogos/vinay-tryambake-PPL37QnXzNI-unsplash.jpg" class="card-img-top" alt="Game 1">
-          <div class="card-body">
-            <h5 class="card-title">GAME "Green Skull: O Pesadelo Assombrado"</h5>
-            <p class="card-text">Descrição:
-              Green Skull é um jogo de terror intenso que leva os jogadores a um mundo sombrio e assustador, onde uma caveira verde sinistra é o símbolo do pesadelo que os aguarda. Prepare-se para uma experiência aterrorizante, cheia de suspense e horrores inimagináveis.</p>
-            <a href="#" class="btn btn-primary">COMPRE AGORA</a>
-          </div>
-        </div>
-      </div><div class="col">
-        <div class="card">
-          <img src="./Imagens jogos/alex-shuper-W6nUD_Pk2Gw-unsplash.jpg" class="card-img-top" alt="Game 1">
-          <div class="card-body">
-            <h5 class="card-title">Game "Umbrella Mars: Aventura Astronáutica"</h5>
-            <p class="card-text">Descrição:
-              Umbrella Mars é um emocionante jogo de aventura espacial que transporta os jogadores para o planeta vermelho, Marte. Nesta jornada interplanetária, você assume o papel de um intrépido astronauta equipado com um guarda-chuva especial, explorando paisagens alienígenas e desafiando os perigos do espaço sideral.</p>
-            <a href="#" class="btn btn-primary">COMPRE AGORA</a>
-          </div>
-        </div>
-      
-      <!-- Adicione mais colunas de jogos aqui -->
-    </div>
-  </div>
+  
 
   <script src="https://unpkg.com/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
 </body>
 </html>

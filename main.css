@@ -1,0 +1,75 @@
+body{
+    font-family: caprasimo;
+}
+.navbar {
+    background-color: #1C1C1C;
+}
+
+.nav .nav-link.active {
+    background-color:#024959;
+    color:#F2B84B;
+}
+
+.nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover,
+h2,h3 {
+    color:#F2B84B;
+
+}
+.navbar-brand { 
+    font-family: caprasimo;
+}
+
+.navbar-toggler { 
+    background-color:#F2B84B;
+
+}
+
+p {
+    font-family: cursive;
+}
+
+#sobre-nossa-loja, #catalogo-de-jogos {
+    background-color: #4F4F4F;
+}
+
+.nav-catalogo .nav-link.active {
+    background-color:#024959; 
+    color: #F2B84B ;
+}
+
+.nav-catalogo .nav-link:hover {
+    color:red;
+}
+
+.section-title {
+
+    background-color: #4F4F4F
+}
+
+.text-colored {
+    color: #F2B84B;
+}
+
+.paragrafo {
+    color: #Fff;
+
+}
+.social-links li {
+    list-style: none;
+    display:inline;
+}
+
+.social-links a {
+   text-decoration: none;
+}
+
+#fale-conosco button:hover {
+    background-color: #F2B84B;
+    color: #Fff;
+}
+
+#fale-conosco button {
+    background-color: #4F4F4F;
+}
